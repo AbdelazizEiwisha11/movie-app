@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrab -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Css Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Strat Side Nav -->
+        <section class="nav-bar">
+            <div class="header-nav py-4 vh-100 d-flex flex-column justify-content-between fw-bolder ">
+                <div class="logo px-3">
+                    <img src="images/logo.png" alt="logo" class="w-100">
+                </div>
+                <div class="toggle-icon d-flex flex-column">
+                    <i class="toggleI fa fa-align-justify fa-xl"></i>
+                    <i class="close fa-solid fa-xmark fa-xl"></i>
+                </div>
+                <div class="social-icons d-flex flex-column ">
+                    <i class="fas fa-globe mb-3"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+            <div class="nav-slide d-flex flex-column justify-content-between  py-4">
+                <div class="nav-menu px-3">
+                    <ul>
+                        <li class="one animate__animated  ">Now playing</li>
+                        <li class="two animate__animated  ">Popular</li>
+                        <li class="three animate__animated  ">Top Rated</li>
+                        <li class="four animate__animated  ">Trending</li>
+                        <li class="five animate__animated  ">Upcoming</li>
+                        <li class="six animate__animated "><a onclick="colseNav()" href="#contactUs">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div class="nav-social text-start pb-3 ps-3 ">
+                    <a href="https://www.facebook.com/profile.php?id=100007817472350" target="_blank"><i class="fab fa-facebook-f fs-5"></i></a>
+                    <a href="https://www.linkedin.com/in/abdelaziz-eiwisha/" target="_blank"><i class="fab fa-linkedin-in fs-5"></i></a>
+                    <a href="https://github.com/AbdelazizEiwisha11" target="_blank"><i class="fab fa-github fs-5"></i></a>
+                    <div class="pt-3">
+                        <span class="fs-6 text-white-50">Copyright Â© 2022 By Abdelaziz</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!-- End Side Nav -->
+
+    <!-- Start Serch -->
+    <section class="serch mt-5">
+        <div class="container w-75 mycontainer">
+            <div class="row">
+                <div class="col-md-6">
+                    <input  id="word" class="form-control mb-5 mb-md-0" type="text" placeholder=" Search in Current List...." >
+                </div>
+                <div class="col-md-6">
+                    <input id="allMovies" class="form-control" type="text" placeholder=" Search in all movies..." >
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Serch -->
+
+    <!-- Start Movies -->
+    <section class="movies mt-5">
+        <div class="container w-75 mycontainer">
+            <div id="rowData" class="row gy-4">
+            </div>
+        </div>
+    </section>
+    <!-- End Movies -->
+
+    <!-- Start Contact US -->
+    <section id="contactUs">
+        <div class="container w-75 mycontainer">
+            <h2 class="text-white my-5">ContacUs...</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="group">
+                        <input  id="name" class="form-control mb-3" type="text" placeholder="Enter Your Name">
+                        <div class="alert" id="nameValidate"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="group">
+                        <input id="email" class="form-control mb-3" type="email" placeholder="Enter Email" >
+                        <div class="alert" id="emailValidate"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="group">
+                        <input id="phone" class="form-control mb-3" type="number" placeholder="Enter Phone">
+                        <div class="alert" id="phoneValidate"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="group">
+                        <input id="age" class="form-control mb-3" type="number" placeholder="Enter Age" >
+                        <div class="alert" id="ageValidate"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="group">
+                        <input id="pass" class="form-control mb-3" type="password" placeholder="Enter password">
+                        <div class="alert" id="passValidate"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="group">
+                        <input id="RePass"  class="form-control mb-3" type="password" placeholder="Enter Repassword" >
+                        <div class="alert" id="RePassValidate"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn btn-outline-danger mt-2">Submit</button>
+        </div>
+    </section>
+    <!-- End Contact US -->
+
+    <!-- JS Scripts -->
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+    <!-- Bootstrab -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- jAvaScript File -->
+    <script src="js/file.js"></script>
+</body>
+</html>
